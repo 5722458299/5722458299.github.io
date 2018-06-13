@@ -1,0 +1,709 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+nav a{
+    color: #5d5f6a;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h5{
+    margin-bottom: 5px;
+}
+
+/*-------通用样式-------*/
+/*-------nav开始-------*/
+
+nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px #cbcbcb solid;
+    padding-top: 10px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+nav li{
+    width: 20%;
+    float: left;
+}
+
+nav .fa{
+    font-size: 24px;
+    display: block;
+    position: relative;
+}
+
+nav .active a,nav li a:hover{
+    color: #f23030;
+}
+
+nav .hot{
+    background-color: #f23030;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+}
+/*-------nav结束-------*/
+
+/*-------顶部搜索栏-------*/
+.search{
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.search .left,.search .center,.search .right{
+    float: left;
+}
+
+.search .left,.search .right{
+    width: 15%;
+}
+
+.search .center{
+    width: 70%;
+    position: relative;
+}
+
+.search .left i,.search .right i{
+    font-size: 24px;
+    display: block;
+}
+
+.search .center input{
+    width: 100%;
+    height: 36px;
+    border-radius: 25px;
+    border: 0;
+    padding: 0px 35px;
+    outline: none;
+    color: #9d9d9d;
+} 
+
+.search .center i{
+    font-size: 20px;
+    color: #9d9d9d;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+}
+
+.search .center i.fa-microphone{
+    left: auto;
+    right: 12px;
+}
+/*-------顶部搜索栏-------*/
+/*-------banner-------*/
+.banner img{
+    width: 100%;
+    display: block;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+/*      background: #eee;*/
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+}
+/*-------banner-------*/
+
+/*-------app-------*/
+.app{
+    z-index: 99;
+    border-radius: 16px 16px 0 0;
+    position: relative;
+    margin-top: -10px;
+    background-color: #fff;
+    
+}
+
+.app .pic{
+    width: 20%;
+    float: left;
+    padding: 4px;
+}
+
+.app img{
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+}
+
+.app h4{
+    font-size: 12px;
+}
+
+.app a{
+    color: #848689;
+}
+
+.btn .button{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #999;
+    float: left;
+    margin: 2px;
+}
+
+.btn .btn1,.btn .button:hover{
+    background-color: #000;
+}
+/*-------app-------*/
+
+/*-------京东快报-------*/
+.news{
+    background-color: #ebebeb;
+    border-radius: 30px;
+    height: 24px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.news div{
+    float: left;
+}
+.news .left{
+    width: 26%;
+    font-weight: bolder;
+}
+
+.news h5,.news p,.news .right{
+    margin: 5px 0; 
+}
+
+.news .center{
+    width: 61%;
+    height: 20px;
+    overflow: hidden;
+}
+
+.news .right{
+    width: 12%;
+    float: right;
+}
+
+.news p span:nth-of-type(1){
+    color: #f8adad;
+}
+
+.news p a,.news p,.news h5{
+    color: #000;
+}
+
+.news .right{
+    padding-left: 5px;
+    border-left:1px #999 solid;
+    margin-left: 1px;
+}
+/*-------京东快报-------*/
+
+/*-------京东秒杀上部分-------*/
+.title-left{
+    background-image: url(../img/main_bg.png);
+    background-size:contain;
+    float: left;
+    width: 66%;
+}
+
+.title-right{
+    float: right;
+    width: 34%;
+}
+
+.title div{
+    font-weight: bolder;
+    padding: 5px 0px;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.title .tit,.title i{
+    color: #f02b2b;
+}
+
+.title .time{
+    margin: 0 5px;
+}
+
+.title .h,.title .m,.title .s{
+    background-color: #000;
+    padding: 1px 3px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.title-right a{
+    color: #f02b2b;
+}
+/*-------京东秒杀上部分-------*/
+
+/*-------京东秒杀下部分-------*/
+.shop li p:nth-of-type(1){
+    color: #f02b2b;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.shop li p:nth-of-type(2){
+    color: #ababab;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.shop{
+    overflow:scroll;
+}
+
+.shop ul{
+    width: 800px;
+}
+
+.shop li{
+    width: 90px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.shop img{
+    width: 100%;
+}
+
+.shop .hot,.shop .tuijian{
+    background-image: url(../img/shop/hot.png);
+    width: 47px;
+    height: 17px;
+    background-size:cover;
+    position: absolute;
+    bottom: 42px;
+    left: 23px;
+}
+
+.shop .tuijian{
+    background-image: url(../img/shop/tuijian.png);
+}
+/*-------京东秒杀下部分-------*/
+/*-------发现好货-------*/
+.faxian{
+    margin-top: 20px;
+}
+.faxian ul li{
+    float: left;
+    font-size: 12px;
+}
+
+.faxian h4{
+    font-size: 16px;
+}
+
+.te{
+    width: 50%;
+    padding: 10px 5px;
+}
+
+ ul{
+    margin-bottom: 0;
+}
+
+.te img{
+    width: 50%;
+    float: left;
+}
+
+.shu{
+    padding: 12.5px 5px;
+}
+
+.faxian ul .shu{
+    width: 25%;
+}
+
+.faxian ul .shu img{
+    width: 100%;
+}
+
+.blue{
+    color: #55a6fa;
+}
+.cheng{
+    color: #ff8103;
+}
+.huang{
+    color: #ffa800;
+}
+.hong{
+    color: #ff0116;
+}
+.zi{
+    color: #ff0095;
+}
+.fen{
+    color: #ff6161;
+}
+.hei{
+    color: #000;
+}
+.ouse{
+    color: #9a96fa;
+}
+.qianzi{
+    color: #d663e1;
+}
+.jiacu{
+    font-weight: bolder;
+}
+
+.jianju{
+    padding-bottom: 5px;
+}
+
+.bt{
+    border-top: 1px #d8d8d8 solid;
+}
+.br{
+    border-right: 1px #d8d8d8 solid;
+}
+.bl{
+    border-left: 1px #d8d8d8 solid;
+}
+.bb{
+    border-bottom: 1px #d8d8d8 solid;
+}
+/*-------发现好货-------*/
+
+/*-------爱生活-------*/
+
+.shenghuo img,.pinpai img,.tese img,.aigj img,.xiaoyuan img,.haodian img,.qingdan img{
+    width: 100%;
+}
+
+.shenghuo .row,.pinpai .row,.tese .row,.aigj .row,.xiaoyuan .row,.haodian .row,.qingdan .row{
+    margin-left: -5px;
+    margin-right: -1px;
+}
+
+.shenghuo .top,.pinpai .top,.tese .top,.aigj .top,.xiaoyuan .top,.haodain .top,.qingdan .top{
+    color: #f5f5f5;
+}
+
+.shenghuo .top h4,.pinpai .top h4,.tese .top h4,.aigj .top h4,.xiaoyuan .top h4,.haodian .top h4,.qingdan .top h4{
+    background: url(../img/main/bg.png) no-repeat center;
+    background-size: contain;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.shenghuo .col-xs-6,.pinpai .col-xs-4,.pinpai .col-xs-6,.tese .col-xs-6,.aigj .col-xs-6,.xiaoyuan .col-xs-6,.haodian .col-xs-8,.haodian .col-xs-4,.qingdan .col-xs-6{
+    padding-left: 5px;
+    padding-right: 1px;
+    position: relative;
+}
+
+.shenghuo .row p,.pinpai .row p,.tese .row p,.aigj .row p,.xiaoyuan p,.haodian p,.qingdan p{
+    font-size: 12px;
+    letter-spacing: -0.9px;
+}
+
+.shenghuo .row .xiao{
+    letter-spacing: -1px;
+}
+
+.biao,.qian,.yangpi{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+}
+
+/*-------爱生活-------*/
+
+/*-------广告-------*/
+
+.guanggao{
+    margin-top: 10px;
+}
+
+.guanggao img{
+    width: 100%;
+}
+
+.guanggao ul{
+    width: 2000px;
+}
+
+.yin{
+    overflow:scroll;
+}
+
+.guanggao ul li{
+    float: left;
+    margin-right: 20px;
+    width: 14%;
+}
+
+/*-------广告-------*/
+
+/*-------品牌时尚-------*/
+
+.pinpai .top h4{
+    background-image: url(../img/main/pinzhi/bg.png);
+}
+
+/*-------品牌时尚-------*/
+/*-------特色推荐-------*/
+
+.tese .top h4{
+    background-image: url(../img/main/pinzhi/bg2.png);
+}
+
+/*-------特色推荐-------*/
+/*-------爱逛街-------*/
+.aigj .top h4{
+    background-image: url(../img/main/aiguangjie/bg.png);
+}
+
+.aigj .row .col-xs-6{
+    padding-top: 10px;
+}
+/*-------爱逛街-------*/
+/*-------东家小院-------*/
+.xiaoyuan .top,.haodian .top,.qingdan .top{
+    position: relative;
+}
+
+.xiaoyuan .top h4{
+    background-image: url(../img/main/xiaoyuan/bg.png);
+}
+
+.xiaoyuan .text,.haodian .text,.qingdan .text{
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.xiaoyuan .top h5,.haodian .top h5,.qingdan .top h5{
+    background: url(../img/main/xiaoyuan/baio.png) no-repeat right;
+    background-size: contain;
+    color: #8b8b8b;
+    padding-right: 16px;
+}
+
+.xiaoyuan .text img,.haodian .text img,.qingdan .text img{
+    width: 12px;
+    height: 12px;
+}
+
+/*-------东家小院-------*/
+/*-------发现好店-------*/
+.haodian .top h4{
+    background-image: url(../img/main/xiaoyuan/bg.png);
+}
+
+.haodian p img{
+    width: 50px;
+    float: left;
+}
+
+.haodian .col-xs-4 img{
+    margin-bottom: 6px;
+}
+
+.xiaoyuan .top h5,.haodian .top h5{
+    background-image: url(../img/main/haodian/images/biaoqian_03.gif);
+}
+/*-------发现好店-------*/
+/*-------优选清单-------*/
+
+.qingdan .top h4{
+    background-image: url(../img/main/jingxuan/images/bg.png);
+}
+
+.qingdan .top h5{
+    background-image: url(../img/main/jingxuan/images/biaoqian_25.gif);
+}
+
+.qingdan{
+    margin-bottom: 54px;
+}
+
+.qingdan p{
+    color: #666666;
+}
+
+.qingdan span{
+    color: #f36c7f;
+}
+
+/*-------优选清单-------*/
+/*-------直播-------*/
+.zhibo{
+    margin-bottom: 500px;
+}
+.zhibo .top h3,
+.zhibo .top p{
+    float: left;
+    color: #fff;
+}
+.zhibo .top p{
+    margin-left: 30px;
+    margin-top: 3px;
+}
+.zhibo .top h3{
+    margin: auto;
+    padding-left: 130px;
+}
+.zhibo .top:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.zhibo .top img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.zhibo .top{
+    background-image: url(../img/zhibo/a2.jpg);
+    background-size: cover;
+    padding-top: 10px;
+}
+body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+
+    }
+.zhibo img{
+    width: 100%;
+}
+
+.zhibo .swiper-container {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    background: #a173a2;
+}
+.zhiboq{
+    height: 200px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
