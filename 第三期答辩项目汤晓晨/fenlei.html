@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/fenlei.css">
+</head>
+<body class="fenlei">
+   <header>
+        <a href="index.html" >
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <p>登录</p>
+    </header>
+    <div class="main">
+    <div class="row">
+        <div class="col-xs-3">
+            <ul>
+                <li class="active">全球购</li>
+                <li>美食酒饮</li>
+                <li>个护美妆</li>
+                <li>家居生活</li>
+                <li>服饰家纺</li>
+                <li>数码家电</li>
+                <li>黄金珠宝</li>
+            </ul>
+        </div>
+        <div class="col-xs-9" id="pinpai">
+           <div class="act">
+               <h3>全球购</h3>
+                <div class="row"  id="pinpai">
+                    <div class="col-xs-4" v-for="pinpai in pinpais">
+                        <a href="">
+                            <img :src="pinpai.img">
+                            <p>{{pinpai.p}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>美食酒饮</h3>
+                <div class="row">
+                    <div class="col-xs-4" v-for="pinpai in pinpais1">
+                        <a href="">
+                            <img :src="pinpai.img">
+                            <p>{{pinpai.p}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>个护美妆</h3>
+                <div class="row">
+                    <div class="col-xs-4" v-for="pinpai in pinpais2">
+                        <a href="">
+                            <img :src="pinpai.img">
+                            <p>{{pinpai.p}}</p>
+                        </a>
+                    </div>
+                </div>
+               </div>
+               <div>
+                <h3>家居生活</h3>
+                <div class="row">
+                    <div class="col-xs-4" v-for="pinpai in pinpais3">
+                        <a href="">
+                            <img :src="pinpai.img">
+                            <p>{{pinpai.p}}</p>
+                        </a>
+                    </div>
+                </div>
+               </div>
+               <div>
+                <h3>服饰家纺</h3>
+                <div class="row">
+                    <div class="col-xs-4" v-for="pinpai in pinpais4">
+                        <a href="">
+                            <img :src="pinpai.img">
+                            <p>{{pinpai.p}}</p>
+                        </a>
+                    </div>
+                </div>
+               </div>
+               <div>
+                <h3>数码家电</h3>
+                <div class="row"  id="pinpai6">
+                    <div class="col-xs-4" v-for="pinpai in pinpais5">
+                        <a href="">
+                            <img :src="pinpai.img">
+                            <p>{{pinpai.p}}</p>
+                        </a>
+                    </div>
+                </div>
+               </div>
+               <div>
+                <h3>黄金珠宝</h3>
+                <div class="row"  id="pinpai7">
+                    <div class="col-xs-4" v-for="pinpai in pinpais6">
+                        <a href="">
+                            <img :src="pinpai.img">
+                            <p>{{pinpai.p}}</p>
+                        </a>
+                    </div>
+                </div>
+               </div> 
+           </div>
+        </div>
+    </div>
+    <div class="hdong">
+       <div class="title">
+               <button>为你推荐</button>
+           </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                   <a href="">
+                    <img src="img/shouye2/1527150824897_550x550M.jpg" alt="">
+                    <p>韩束魔力BB霜双星劲爆组</p>
+                    <span>￥199</span>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                   <a href="">
+                    <img src="img/shouye2/151064889638882484M.jpg" alt="">
+                    <p>融氏葵花籽油5.6L阳光组</p>
+                    <span>￥129</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/149240665268679550M.jpg" alt="">
+                    <p>宝庆银楼如意九眼天珠套组</p>
+                    <span>￥2980</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1527763610120_550x550M.jpg" alt="">
+                    <p>【买一发二 共10双】海谜璃</p>
+                    <span>￥49.9</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1526526475814_550x550M.jpg" alt="">
+                    <p>战友蘑菇 巢湖莲籽 天然干货 250g</p>
+                    <span>￥32</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/152603175777478259M.jpg" alt="">
+                    <p>夏季中长款空调衫薄款外搭披肩上衣女</p>
+                    <span>￥34.9</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1527501337862_550x550M.jpg" alt="">
+                    <p>寐丽 2018韩版宽松运动服两件套装女</p>
+                    <span>$299</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/151321706379769708M.jpg" alt="">
+                    <p>医真中药护齿功效牙膏回馈组</p>
+                    <span>$58</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529470632599_550x550M.jpg" alt="">
+                    <p>【百草味-小米锅巴80g*4包装】包邮</p>
+                    <span>￥199</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529470013659_550x550M.jpg" alt="">
+                    <p>【百草味麻辣豆皮65g*6包装 】</p>
+                    <span>￥69</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529468583124_550x550M.jpg" alt="">
+                    <p>【百草味-五香牛肉条】</p>
+                    <span>￥62.2</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529466391030_550x550M.jpg" alt="">
+                    <p>【百草味-抱抱果260g*3包装】</p>
+                    <span>￥69</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529466115472_550x550M.jpg" alt="">
+                    <p>【百草味-蓝莓干80g*3包装】</p>
+                    <span>￥56.7</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529466033014_550x550M.jpg" alt="">
+                    <p>搭个2018女士夏装</p>
+                    <span>￥118</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529465612743_550x550M.jpg" alt="">
+                    <p>【百草味-冰糖山楂120g*4包装】</p>
+                    <span>￥35.4</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529465152038_550x550M.jpg" alt="">
+                    <p>【百草味-纸皮核桃180g*4包装】</p>
+                    <span>￥34.8</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529463561163_550x550M.jpg" alt="">
+                    <p>【百草味-冻干榴莲干*4包装】</p>
+                    <span>￥43.5</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529463494113_550x550M.jpg" alt="">
+                    <p>【百草味-碧根果190g*4包装】</p>
+                    <span>￥62.7</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="img/shouye2/149880904772365552M.jpg" alt="">
+                    <p>宝庆银楼龙凤银碗套装</p>
+                    <span>￥1480</span>
+                </div>
+                <div class="col-xs-6">
+                    <img src="img/shouye2/1529394701419_550x550M.jpg" alt="">
+                    <p>一梦印花冰岛席梦思</p>
+                    <span>￥108</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="js/vue.js"></script>
+    <script src="js/fenlei.js"></script>
+</body>
+</html>

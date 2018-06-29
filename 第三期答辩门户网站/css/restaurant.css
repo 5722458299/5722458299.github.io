@@ -1,0 +1,115 @@
+header img{
+    width: 100%;
+}
+
+
+.li1{
+    padding-left: 400px;
+}
+.navbar-default {
+    background-color: #0e8eb5;
+    border-color: rgba(255,255,255,.15);
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    transition: 1s;
+}
+.nav .navbar-nav li a:hover{
+    color: black;
+}
+main h1{
+    text-align: center;
+    color: #0e8eb5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+main img{
+    width: 100%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 8px #999;
+    margin-top: 20px;
+}
+main p{
+    color: #7f7b77;
+}
+.p1{
+    padding-top: 20px;
+}
+input{
+    width: 100%;
+}
+.sel1 {
+    width: 100%;
+    padding: .4em 1em;
+    font-size: 1em;
+    outline: none;
+    text-transform: capitalize;
+    border: 1px solid #00AD8A;
+    color: #000;
+    background: transparent;
+}
+.best-hot input[type="submit"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    background: #00AD8A;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.best-hot1 input[type="text"] {
+    border: 1px solid #00AD8A;
+    outline: none;
+    padding: 8px 8px;
+    width: 100%;
+    color: #000;
+    font-size: 0.9em;
+    background: transparent;
+}
+.book_date1 {
+    margin-bottom: 0.8em;
+}
+.book_date1 input[type="date"] {
+    line-height: 30px;
+}
+
+
+li{
+    list-style: none;
+}
+footer .top{
+    background: #333;
+}
+footer .top li{
+    color: #7c7c7c;
+}
+footer .top h3{
+    color: #eeeeee;
+}
+footer .top .row{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+@media (max-width: 1199px){
+    .li1{
+        padding-left: 200px;
+    }
+}
+@media (max-width: 470px){
+    .li1{
+        padding: 0;
+    }
+}

@@ -1,0 +1,204 @@
+
+
+new Vue({
+    el:"#pinpai",
+    data:{
+        pinpais:[
+            {img:"img/fenlei1/147030671857846381.jpg",p:"美妆护肤"},{img:"img/fenlei1/147030675969118420.jpg",p:"家居日用"},{img:"img/fenlei1/147030719758375660.jpg",p:"个护健康"},{img:"img/fenlei1/147668918546417177.jpg",p:"保健品"},{img:"img/fenlei1/149006613103685017.jpg",p:"奶粉"},{img:"img/fenlei1/149006622593767726.jpg",p:"尿裤湿巾"},{img:"img/fenlei1/149006624732013736.jpg",p:"健康护理"}
+            
+        ],
+        pinpais1:[
+            {img:"img/fenlei2/14641446562061694.jpg",p:"进口食品"},
+            {img:"img/fenlei2/146414473740525573.jpg",p:"休闲食品"},
+            {img:"img/fenlei2/14641446660722192.jpg",p:"粮油调味"},
+            {img:"img/fenlei2/146414709719375027.jpg",p:"冲调饮料"},
+            {img:"img/fenlei2/14546396911705739.jpg",p:"时尚礼券"},
+            {img:"img/fenlei2/147150631061679378.jpg",p:"茗茶"},
+            {img:"img/fenlei2/146414462607632036.jpg",p:"地方特产"},
+            {img:"img/fenlei2/146414472525967479.jpg",p:"水果蔬菜"},
+            {img:"img/fenlei2/146414463785155806.jpg",p:"海鲜水产"},
+            {img:"img/fenlei2/146414470187689684.jpg",p:"肉禽鸡蛋"},
+            {img:"img/fenlei2/146414471365539236.jpg",p:"辣味熟食"},
+            {img:"img/fenlei2/146414460536570829.jpg",p:"白酒"},
+            {img:"img/fenlei2/146414468540965329.jpg",p:"葡萄酒"},
+            {img:"img/fenlei2/14641447485188031.jpg",p:"洋酒"},
+            {img:"img/fenlei2/145448383881774893.jpg",p:"啤酒"},
+            {img:"img/fenlei2/145463981039319586.jpg",p:"黄酒养身酒"},
+            {img:"img/fenlei2/145463981616089602.jpg",p:"陈年老酒"},
+            {img:"img/fenlei2/146414475886724958.jpg",p:"营养健康"},
+            {img:"img/fenlei2/146414476613782756.jpg",p:"营养成分"},
+            {img:"img/fenlei2/145448425557748923.jpg",p:"传统滋补"},
+            {img:"img/fenlei2/145463983477376602.jpg",p:"成人用品"},
+            {img:"img/fenlei2/145852799692176479.jpg",p:"保健器械"},
+            {img:"img/fenlei2/145463985503833431.jpg",p:"急救卫生"},
+        ],
+       pinpais2:[
+            {img:"img/fenlei3/146414343933890459.jpg",p:"面部护肤"},
+            {img:"img/fenlei3/146414346405066292.jpg",p:"身体护肤"},
+            {img:"img/fenlei3/146414347025235670.jpg",p:"洗发护发"},
+            {img:"img/fenlei3/145852773294144781.jpg",p:"香水"},
+            {img:"img/fenlei3/146414340301550407.jpg",p:"彩妆"},
+            {img:"img/fenlei3/146414342760297478.jpg",p:"口腔护理"},
+            {img:"img/fenlei3/146414348889283253.jpg",p:"女性护理"},
+            {img:"img/fenlei3/146414341687117088.jpg",p:"个护器械"},
+        ],
+        pinpais3:[
+            {img:"img/fenlei4/146414443544724314.jpg",p:"生活电器"},
+            {img:"img/fenlei4/146414391174745413.jpg",p:"厨房电器"},
+            {img:"img/fenlei4/146414442236117623.jpg",p:"生活日用"},
+            {img:"img/fenlei4/146414441124923970.jpg",p:"清洁用品"},
+            {img:"img/fenlei4/145464016609875363.jpg",p:"灯具"},
+            {img:"img/fenlei4/146414395587854931.jpg",p:"家装软饰"},
+            {img:"img/fenlei4/146414439360198592.jpg",p:"烹饪锅具"},
+            {img:"img/fenlei4/145448562255848999.jpg",p:"刀剪菜板"},
+            {img:"img/fenlei4/146414392229128932.jpg",p:"厨房配件"},
+            {img:"img/fenlei4/146414447790561051.jpg",p:"水具酒具"},
+            {img:"img/fenlei4/146414381287672562.jpg",p:"餐具"},
+            {img:"img/fenlei4/146414382772262483.jpg",p:"茶具，咖啡具"},
+            {img:"img/fenlei4/145464024330872641.jpg",p:"卧室家具"},
+            {img:"img/fenlei4/145464025511456716.jpg",p:"客厅家具"},
+            {img:"img/fenlei4/145464027669916636.jpg",p:"餐厅家具"},
+            {img:"img/fenlei4/146414445209315130.jpg",p:"书房家具"},
+            {img:"img/fenlei4/146414393822480959.jpg",p:"储物家具"},
+            {img:"img/fenlei4/146414454569662423.jpg",p:"阳台、户外"},
+            {img:"img/fenlei4/145464036128212457.jpg",p:"商业办公"},
+            {img:"img/fenlei4/146414389466370861.jpg",p:"宠物主粮"},
+            {img:"img/fenlei4/145464042597022768.jpg",p:"医疗保健"},
+            {img:"img/fenlei4/145464045443859667.jpg",p:"家居日用"},
+            {img:"img/fenlei4/145464050199453879.jpg",p:"洗护美容"},
+            {img:"img/fenlei4/145448704269348174.jpg",p:"奶粉"},
+            {img:"img/fenlei4/145448706602131481.jpg",p:"营养辅食"},
+            {img:"img/fenlei4/146414450063460547.jpg",p:"服饰寝具"},
+            {img:"img/fenlei4/146414347025235670.jpg",p:"男装童鞋"},
+            {img:"img/fenlei4/14641443792029392.jpg",p:"尿裤湿巾"},
+            {img:"img/fenlei4/145464054805818791.jpg",p:"安全座椅"},
+            {img:"img/fenlei4/14544871741318074.jpg",p:"喂养用品"},
+            {img:"img/fenlei4/14641445229069798.jpg",p:"洗护用品"},
+            {img:"img/fenlei4/145464057448576807.jpg",p:"童车童床"},
+            {img:"img/fenlei4/146414458108041441.jpg",p:"妈妈专区"},
+            {img:"img/fenlei4/145464061717049129.jpg",p:"遥控电动"},
+            {img:"img/fenlei4/145464064120823720.jpg",p:"毛绒玩具"},
+            {img:"img/fenlei4/145464066148639578.jpg",p:"玩具娃娃"},
+            {img:"img/fenlei4/145464068633440935.jpg",p:"模型玩具"},
+            {img:"img/fenlei4/145464069479866755.jpg",p:"健身玩具"},
+            {img:"img/fenlei4/145464070666449589.jpg",p:"动漫玩具"},
+            {img:"img/fenlei4/146414456395249237.jpg",p:"益智玩具"},
+            {img:"img/fenlei4/145464073491582741.jpg",p:"积木拼差"},
+            {img:"img/fenlei4/145464074274384029.jpg",p:"DIY玩具"},
+            {img:"img/fenlei4/145464075353322425.jpg",p:"创意减压"},
+            {img:"img/fenlei4/145464076530084376.jpg",p:"乐器相关"},
+            {img:"img/fenlei4/146414434926645453.jpg",p:"旅游"},
+            {img:"img/fenlei4/145852806892126556.jpg",p:"保险"},
+            {img:"img/fenlei4/145852784509598596.jpg",p:"汽车"},
+        ],
+        pinpais4:[
+            {img:"img/fenlei5/146405392363134822.jpg",p:"抱枕靠垫"},
+            {img:"img/fenlei5/14564496054833165.jpg",p:"毛巾浴巾"},
+            {img:"img/fenlei5/146414314789543720.jpg",p:"枕芯"},
+            {img:"img/fenlei5/146405394081954334.jpg",p:"床单被罩"},
+            {img:"img/fenlei5/146414307548128669.jpg",p:"毯子"},
+            {img:"img/fenlei5/146414253048597642.jpg",p:"毛垫床褥"},
+            {img:"img/fenlei5/14641430938343746.jpg",p:"蚊帐"},
+            {img:"img/fenlei5/146414265736060779.jpg",p:"床品套件"},
+            {img:"img/fenlei5/145644978653656221.jpg",p:"被子"},
+            {img:"img/fenlei5/145644979635764395.jpg",p:"电热毯"},
+            {img:"img/fenlei5/145644981606925674.jpg",p:"窗帘/纱窗"},
+            {img:"img/fenlei5/14564498257524761.jpg",p:"布艺软饰"},
+            {img:"img/fenlei5/145644983705388928.jpg",p:"凉席"},
+            {img:"img/fenlei5/146414276683380092.jpg",p:"男士上装"},
+            {img:"img/fenlei5/146414278575796094.jpg",p:"男士下装"},
+            {img:"img/fenlei5/146414298929878371.jpg",p:"女士上装"},
+            {img:"img/fenlei5/14641451888732243.jpg",p:"女裙"},
+            {img:"img/fenlei5/146414288393981671.jpg",p:"女裤"},
+            {img:"img/fenlei5/146414293186136414.jpg",p:"女士内衣"},
+            {img:"img/fenlei5/146414274766284195.jpg",p:"男士内衣"},
+            {img:"img/fenlei5/145455181729962219.jpg",p:"帽子手套"},
+            {img:"img/fenlei5/146414313167417822.jpg",p:"眼镜"},
+            {img:"img/fenlei5/145455188708670679.jpg",p:"腰带"},
+            {img:"img/fenlei5/145455195353692430.jpg",p:"其他配件"},
+            {img:"img/fenlei5/145455237957479435.jpg",p:"男士正装鞋"},
+            {img:"img/fenlei5/146414283093899123.jpg",p:"男士休闲鞋"},
+            {img:"img/fenlei5/146414281362736152.jpg",p:"男士拖鞋"},
+            {img:"img/fenlei5/146414295384125665.jpg",p:"女士皮靴"},
+            {img:"img/fenlei5/146414297179970317.jpg",p:"女士休闲鞋"},
+            {img:"img/fenlei5/147148687028824275.jpg",p:"女士拖鞋"},
+            {img:"img/fenlei5/146414303042894486.jpg",p:"奢饰品"},
+            {img:"img/fenlei5/14641428639573400.jpg",p:"潮流女包"},
+            {img:"img/fenlei5/145456734012898275.jpg",p:"精品男包"},
+            {img:"img/fenlei5/146414267966651159.jpg",p:"功能箱包"},
+            {img:"img/fenlei5/145456740445813648.jpg",p:"运动鞋包"},
+            {img:"img/fenlei5/146414311961418925.jpg",p:"运动服饰"},
+            {img:"img/fenlei5/146414300756830948.jpg",p:"骑行运动"},
+            {img:"img/fenlei5/145637010650698922.jpg",p:"垂钓用品"},
+            {img:"img/fenlei5/145456750581756878.jpg",p:"有用用品"},
+            {img:"img/fenlei5/146414316680744055.jpg",p:"户外鞋服"},
+            {img:"img/fenlei5/146414316680744055.jpg",p:"户外装备"},
+            {img:"img/fenlei5/146414271256317698.jpg",p:"健身训练"},
+            {img:"img/fenlei5/146414304632418594.jpg",p:"体育娱乐"},
+        ],
+        pinpais5:[
+            {img:"img/fenlei6/146414330343486078.jpg",p:"大家电"},
+            {img:"img/fenlei6/146414333440346029.jpg",p:"手机通讯"},
+            {img:"img/fenlei6/145454965546063540.jpg",p:"耳机"},
+            {img:"img/fenlei6/145464095341879299.jpg",p:"保护套"},
+            {img:"img/fenlei6/145454979203444401.jpg",p:"充电器"},
+            {img:"img/fenlei6/1454640974382395.jpg",p:"其他专区"},
+            {img:"img/fenlei6/145637063277562286.jpg",p:"iphobe专区"},
+            {img:"img/fenlei6/145455011035097578.jpg",p:"摄影摄像"},
+            {img:"img/fenlei6/146414334684332275.jpg",p:"数码配件"},
+            {img:"img/fenlei6/145464100298585763.jpg",p:"娱乐影音"},
+            {img:"img/fenlei6/146414337457528939.jpg",p:"智能设备"},
+            {img:"img/fenlei6/145464101484963483.jpg",p:"数码配件"},
+            {img:"img/fenlei6/146414331940847383.jpg",p:"电脑整机"},
+            {img:"img/fenlei6/145464104185049784.jpg",p:"电脑配件"},
+            {img:"img/fenlei6/145464105522476938.jpg",p:"外设产品"},
+            {img:"img/fenlei6/145464409052479825.jpg",p:"网络产品"},
+            {img:"img/fenlei6/145464113256917479.jpg",p:"办公设备"},
+            {img:"img/fenlei6/145464114528983677.jpg",p:"文具，耗材"},
+            {img:"img/fenlei6/145464115799693744.jpg",p:"游戏设备"},
+        ],
+        pinpais6:[
+            {img:"img/fenlei7/145454882738859944.jpg",p:"纯金饰品"},
+            {img:"img/fenlei7/145454885189576707.jpg",p:"金银投资"},
+            {img:"img/fenlei7/145454888073813830.jpg",p:"铂金"},
+            {img:"img/fenlei7/14545489122145944.jpg",p:"银饰"},
+            {img:"img/fenlei7/145454897986011382.jpg",p:"翡翠玉石"},
+            {img:"img/fenlei7/145454901273019055.jpg",p:"钻石"},
+            {img:"img/fenlei7/145454904629931212.jpg",p:"水晶玛瑙"},
+            {img:"img/fenlei7/145454907046771037.jpg",p:"时尚饰品"},
+            {img:"img/fenlei7/145454915703529601.jpg",p:"彩宝"},
+            {img:"img/fenlei7/145454912688264763.jpg",p:"天然木饰"},
+            {img:"img/fenlei7/145454917748783514.jpg",p:"珍珠"},
+            {img:"img/fenlei7/145464124085461688.jpg",p:"男表"},
+            {img:"img/fenlei7/145454922501114683.jpg",p:"女表"},
+        ]
+    }
+})
+var lis=document.querySelectorAll(".main ul li");
+var lis2 = document.querySelectorAll(".main .col-xs-9>div");
+for(var i=0;i<lis.length;i++){
+    lis[i].index = i;
+    lis[i].onclick=function(){
+        for(var i=0;i<lis.length;i++){
+            lis[i].classList.remove("active");
+            lis2[i].classList.remove("act");
+        }
+            lis[this.index].classList.add("active");
+            lis2[this.index].classList.add("act");
+    }
+}
+
+
+
+
+/*-----为你推荐点击显示隐藏-----*/
+var btn=document.querySelector("button");
+var rcmd=document.querySelector(".hdong .container");
+rcmd.style.display="none";
+btn.onclick=function(){
+    if(rcmd.style.display == "block"){
+        rcmd.style.display = "none";
+    }else{
+        rcmd.style.display = "block";
+    }
+}
